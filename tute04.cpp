@@ -25,5 +25,22 @@ int main() {
   std::cout << "nCr = ";
   std::cout << nCr(n,r);
   std::cout << std::endl;
-  return 0;
+ 
 }
+
+long Factorial(int no){
+  long value;
+     for (int a=1;a<=no;a++) 
+     {
+		   value=value*a;
+	   }
+  return value;
+  }
+
+
+
+long nCr(int n, int r){
+  long answer;
+  answer =  Factorial(n)/(Factorial(r)*Factorial(n-r));
+  return answer;
+  }
